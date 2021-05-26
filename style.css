@@ -14,18 +14,28 @@
 	height: 350px;
 	cursor: pointer;
 	border-radius: 9px;
+	position: relative;
 }
-.card__front {
-	background: url(img/avatar1.png) center / cover no-repeat;
+.card-face {
 	width: 100%;
 	height: 100%;
 	border-radius: 9px;
-	position: relative;
 	border: solid 1px #444;
+	transition: 400ms transform;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.card__forward {
+	background: url(img/avatar1.png) center / cover no-repeat;
+	
+}
+.card:hover .card__bottom {
+	transform: scale(1.8);
 }
 .note {
 	color: #ddd;
-	background-color: rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.4);
 	width: 20px;
 	height: 45px;
 	padding: 5px;
@@ -37,3 +47,87 @@
 	position: absolute;
 	right: 10%;
 }
+
+/* style the bottom face card */
+
+.card__bottom {
+	background-color: #555;
+	color: #eee;
+}
+header {
+	height: 20%;
+	background: url(img/avatar1.png) center/cover no-repeat;
+}
+.title {
+	text-align: center;
+	margin: 50px 0 10px;
+	text-transform: capitalize;
+	font-size: 1em;
+}
+.stream-and-watching {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: 10px auto;
+}
+.stream-and-watching section {
+	width: 50%;
+	text-align: center;
+}
+.stream-and-watching section:first-child {
+	border-right: 1px #eee solid;
+}
+.btn-more-stream {
+	width: 70%;
+	border: none;
+	display: block;
+	background-color: dodgerblue;
+	color: #eee;
+	font-weight: 600;
+	height: 30px;
+	border-radius: 30px;
+	cursor: pointer;
+	margin: 20px auto;
+}
+.other-cards {
+	display: flex;
+	justify-content: space-between;
+	width: 85%;
+	color: #eee;
+	margin: auto;
+}
+.card-box {
+	text-align: center;
+	font-size: .8em;
+}
+.card-box img {
+	width: 40px;
+	height: 40px;;
+	border-radius: 50%;
+}
+.card-box-title {
+	font-weight: 600;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
